@@ -1,0 +1,65 @@
+package "illusory0x0/clone"
+
+import(
+  "moonbitlang/core/deque"
+  "moonbitlang/core/hashmap"
+  "moonbitlang/core/hashset"
+  "moonbitlang/core/list"
+  "moonbitlang/core/priority_queue"
+  "moonbitlang/core/set"
+  "moonbitlang/core/sorted_map"
+  "moonbitlang/core/sorted_set"
+)
+
+// Values
+
+// Types and methods
+
+// Type aliases
+
+// Traits
+pub(open) trait Clone {
+  clone(Self) -> Self
+}
+impl Clone for Unit
+impl Clone for Bool
+impl Clone for Byte
+impl Clone for Char
+impl Clone for Int
+impl Clone for Int16
+impl Clone for Int64
+impl Clone for UInt
+impl Clone for UInt16
+impl Clone for UInt64
+impl Clone for Float
+impl Clone for Double
+impl Clone for String
+impl[A : Clone] Clone for A?
+impl[A : Clone, B : Clone] Clone for Result[A, B]
+impl[A : Clone] Clone for FixedArray[A]
+impl Clone for Bytes
+impl[A : Clone] Clone for Ref[A]
+impl[A : Clone] Clone for Array[A]
+impl[K : Clone + Eq + Hash, V : Clone] Clone for Map[K, V]
+impl[A : Clone] Clone for @deque.T[A]
+impl[K : Clone + Eq + Hash, V : Clone] Clone for @hashmap.T[K, V]
+impl[V : Clone + Eq + Hash] Clone for @hashset.T[V]
+impl[A : Clone] Clone for @list.T[A]
+impl[A : Clone + Compare] Clone for @priority_queue.T[A]
+impl[V : Clone + Eq + Hash] Clone for @set.Set[V]
+impl[K : Clone + Eq + Compare, V : Clone] Clone for @sorted_map.T[K, V]
+impl[V : Clone + Eq + Compare] Clone for @sorted_set.T[V]
+impl[A : Clone, B : Clone] Clone for (A, B)
+impl[A : Clone, B : Clone, C : Clone] Clone for (A, B, C)
+impl[A : Clone, B : Clone, C : Clone, D : Clone] Clone for (A, B, C, D)
+impl[A : Clone, B : Clone, C : Clone, D : Clone, E : Clone] Clone for (A, B, C, D, E)
+impl[A : Clone, B : Clone, C : Clone, D : Clone, E : Clone, F : Clone] Clone for (A, B, C, D, E, F)
+impl[A : Clone, B : Clone, C : Clone, D : Clone, E : Clone, F : Clone, G : Clone] Clone for (A, B, C, D, E, F, G)
+impl[A : Clone, B : Clone, C : Clone, D : Clone, E : Clone, F : Clone, G : Clone, H : Clone] Clone for (A, B, C, D, E, F, G, H)
+impl[A : Clone, B : Clone, C : Clone, D : Clone, E : Clone, F : Clone, G : Clone, H : Clone, I : Clone] Clone for (A, B, C, D, E, F, G, H, I)
+impl[A : Clone, B : Clone, C : Clone, D : Clone, E : Clone, F : Clone, G : Clone, H : Clone, I : Clone, J : Clone] Clone for (A, B, C, D, E, F, G, H, I, J)
+impl[A : Clone, B : Clone, C : Clone, D : Clone, E : Clone, F : Clone, G : Clone, H : Clone, I : Clone, J : Clone, K : Clone] Clone for (A, B, C, D, E, F, G, H, I, J, K)
+impl[A : Clone, B : Clone, C : Clone, D : Clone, E : Clone, F : Clone, G : Clone, H : Clone, I : Clone, J : Clone, K : Clone, L : Clone] Clone for (A, B, C, D, E, F, G, H, I, J, K, L)
+impl[A : Clone, B : Clone, C : Clone, D : Clone, E : Clone, F : Clone, G : Clone, H : Clone, I : Clone, J : Clone, K : Clone, L : Clone, M : Clone] Clone for (A, B, C, D, E, F, G, H, I, J, K, L, M)
+impl[A : Clone, B : Clone, C : Clone, D : Clone, E : Clone, F : Clone, G : Clone, H : Clone, I : Clone, J : Clone, K : Clone, L : Clone, M : Clone, N : Clone] Clone for (A, B, C, D, E, F, G, H, I, J, K, L, M, N)
+
