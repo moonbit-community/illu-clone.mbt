@@ -76,7 +76,7 @@ pub impl[A : Clone] Clone for Array[A] with clone(self) {
 }
 
 ///|
-pub impl[A : Clone] Clone for @list.T[A] with clone(self) {
+pub impl[A : Clone] Clone for @list.List[A] with clone(self) {
   self.map(Clone::clone)
 }
 
@@ -87,7 +87,8 @@ pub impl[A : Clone] Clone for FixedArray[A] with clone(self) {
 
 ///|
 pub impl Clone for Bytes with clone(self) {
-  self.copy()
+  // Bytes are immutable, so we can return self directly
+  self
 }
 
 ///|
