@@ -115,7 +115,7 @@ pub impl[A : Clone] Clone for @deque.T[A] with clone(self) {
 
 ///|
 pub impl[K : Clone + Eq + Hash, V : Clone] Clone for @hashmap.T[K, V] with clone(
-  self
+  self,
 ) {
   let res = @hashmap.new(capacity=self.size())
   for k, v in self {
@@ -135,7 +135,7 @@ pub impl[V : Clone + Eq + Hash] Clone for @hashset.T[V] with clone(self) {
 
 ///|
 pub impl[K : Clone + Eq + Compare, V : Clone] Clone for @sorted_map.T[K, V] with clone(
-  self
+  self,
 ) {
   let res = @sorted_map.new()
   for k, v in self {
