@@ -12,7 +12,7 @@ pub impl[A : Clone, B : Clone, C : Clone] Clone for (A, B, C) with clone(self) {
 
 ///|
 pub impl[A : Clone, B : Clone, C : Clone, D : Clone] Clone for (A, B, C, D) with clone(
-  self
+  self,
 ) {
   let (a, b, c, d) = self
   (a.clone(), b.clone(), c.clone(), d.clone())
@@ -44,30 +44,30 @@ pub impl[A : Clone, B : Clone, C : Clone, D : Clone, E : Clone, F : Clone] Clone
 }
 
 ///|
-pub impl[A : Clone, B : Clone, C : Clone, D : Clone, E : Clone, F : Clone, G : Clone] Clone for (
-  A,
-  B,
-  C,
-  D,
-  E,
-  F,
-  G,
-) with clone(self) {
+pub impl[
+  A : Clone,
+  B : Clone,
+  C : Clone,
+  D : Clone,
+  E : Clone,
+  F : Clone,
+  G : Clone,
+] Clone for (A, B, C, D, E, F, G) with clone(self) {
   let (a, b, c, d, e, f, g) = self
   (a.clone(), b.clone(), c.clone(), d.clone(), e.clone(), f.clone(), g.clone())
 }
 
 ///|
-pub impl[A : Clone, B : Clone, C : Clone, D : Clone, E : Clone, F : Clone, G : Clone, H : Clone] Clone for (
-  A,
-  B,
-  C,
-  D,
-  E,
-  F,
-  G,
-  H,
-) with clone(self) {
+pub impl[
+  A : Clone,
+  B : Clone,
+  C : Clone,
+  D : Clone,
+  E : Clone,
+  F : Clone,
+  G : Clone,
+  H : Clone,
+] Clone for (A, B, C, D, E, F, G, H) with clone(self) {
   let (a, b, c, d, e, f, g, h) = self
   (
     a.clone(),
@@ -82,17 +82,17 @@ pub impl[A : Clone, B : Clone, C : Clone, D : Clone, E : Clone, F : Clone, G : C
 }
 
 ///|
-pub impl[A : Clone, B : Clone, C : Clone, D : Clone, E : Clone, F : Clone, G : Clone, H : Clone, I : Clone] Clone for (
-  A,
-  B,
-  C,
-  D,
-  E,
-  F,
-  G,
-  H,
-  I,
-) with clone(self) {
+pub impl[
+  A : Clone,
+  B : Clone,
+  C : Clone,
+  D : Clone,
+  E : Clone,
+  F : Clone,
+  G : Clone,
+  H : Clone,
+  I : Clone,
+] Clone for (A, B, C, D, E, F, G, H, I) with clone(self) {
   let (a, b, c, d, e, f, g, h, i) = self
   (
     a.clone(),
@@ -108,18 +108,18 @@ pub impl[A : Clone, B : Clone, C : Clone, D : Clone, E : Clone, F : Clone, G : C
 }
 
 ///|
-pub impl[A : Clone, B : Clone, C : Clone, D : Clone, E : Clone, F : Clone, G : Clone, H : Clone, I : Clone, J : Clone] Clone for (
-  A,
-  B,
-  C,
-  D,
-  E,
-  F,
-  G,
-  H,
-  I,
-  J,
-) with clone(self) {
+pub impl[
+  A : Clone,
+  B : Clone,
+  C : Clone,
+  D : Clone,
+  E : Clone,
+  F : Clone,
+  G : Clone,
+  H : Clone,
+  I : Clone,
+  J : Clone,
+] Clone for (A, B, C, D, E, F, G, H, I, J) with clone(self) {
   let (a, b, c, d, e, f, g, h, i, j) = self
   (
     a.clone(),
@@ -136,19 +136,19 @@ pub impl[A : Clone, B : Clone, C : Clone, D : Clone, E : Clone, F : Clone, G : C
 }
 
 ///|
-pub impl[A : Clone, B : Clone, C : Clone, D : Clone, E : Clone, F : Clone, G : Clone, H : Clone, I : Clone, J : Clone, K : Clone] Clone for (
-  A,
-  B,
-  C,
-  D,
-  E,
-  F,
-  G,
-  H,
-  I,
-  J,
-  K,
-) with clone(self) {
+pub impl[
+  A : Clone,
+  B : Clone,
+  C : Clone,
+  D : Clone,
+  E : Clone,
+  F : Clone,
+  G : Clone,
+  H : Clone,
+  I : Clone,
+  J : Clone,
+  K : Clone,
+] Clone for (A, B, C, D, E, F, G, H, I, J, K) with clone(self) {
   let (a, b, c, d, e, f, g, h, i, j, k) = self
   (
     a.clone(),
@@ -166,20 +166,20 @@ pub impl[A : Clone, B : Clone, C : Clone, D : Clone, E : Clone, F : Clone, G : C
 }
 
 ///|
-pub impl[A : Clone, B : Clone, C : Clone, D : Clone, E : Clone, F : Clone, G : Clone, H : Clone, I : Clone, J : Clone, K : Clone, L : Clone] Clone for (
-  A,
-  B,
-  C,
-  D,
-  E,
-  F,
-  G,
-  H,
-  I,
-  J,
-  K,
-  L,
-) with clone(self) {
+pub impl[
+  A : Clone,
+  B : Clone,
+  C : Clone,
+  D : Clone,
+  E : Clone,
+  F : Clone,
+  G : Clone,
+  H : Clone,
+  I : Clone,
+  J : Clone,
+  K : Clone,
+  L : Clone,
+] Clone for (A, B, C, D, E, F, G, H, I, J, K, L) with clone(self) {
   let (a, b, c, d, e, f, g, h, i, j, k, l) = self
   (
     a.clone(),
@@ -198,21 +198,21 @@ pub impl[A : Clone, B : Clone, C : Clone, D : Clone, E : Clone, F : Clone, G : C
 }
 
 ///|
-pub impl[A : Clone, B : Clone, C : Clone, D : Clone, E : Clone, F : Clone, G : Clone, H : Clone, I : Clone, J : Clone, K : Clone, L : Clone, M : Clone] Clone for (
-  A,
-  B,
-  C,
-  D,
-  E,
-  F,
-  G,
-  H,
-  I,
-  J,
-  K,
-  L,
-  M,
-) with clone(self) {
+pub impl[
+  A : Clone,
+  B : Clone,
+  C : Clone,
+  D : Clone,
+  E : Clone,
+  F : Clone,
+  G : Clone,
+  H : Clone,
+  I : Clone,
+  J : Clone,
+  K : Clone,
+  L : Clone,
+  M : Clone,
+] Clone for (A, B, C, D, E, F, G, H, I, J, K, L, M) with clone(self) {
   let (a, b, c, d, e, f, g, h, i, j, k, l, m) = self
   (
     a.clone(),
@@ -232,22 +232,22 @@ pub impl[A : Clone, B : Clone, C : Clone, D : Clone, E : Clone, F : Clone, G : C
 }
 
 ///|
-pub impl[A : Clone, B : Clone, C : Clone, D : Clone, E : Clone, F : Clone, G : Clone, H : Clone, I : Clone, J : Clone, K : Clone, L : Clone, M : Clone, N : Clone] Clone for (
-  A,
-  B,
-  C,
-  D,
-  E,
-  F,
-  G,
-  H,
-  I,
-  J,
-  K,
-  L,
-  M,
-  N,
-) with clone(self) {
+pub impl[
+  A : Clone,
+  B : Clone,
+  C : Clone,
+  D : Clone,
+  E : Clone,
+  F : Clone,
+  G : Clone,
+  H : Clone,
+  I : Clone,
+  J : Clone,
+  K : Clone,
+  L : Clone,
+  M : Clone,
+  N : Clone,
+] Clone for (A, B, C, D, E, F, G, H, I, J, K, L, M, N) with clone(self) {
   let (a, b, c, d, e, f, g, h, i, j, k, l, m, n) = self
   (
     a.clone(),
