@@ -1,3 +1,4 @@
+// Generated using `moon info`, DON'T EDIT IT
 package "illusory0x0/clone"
 
 import(
@@ -12,6 +13,8 @@ import(
 )
 
 // Values
+
+// Errors
 
 // Types and methods
 
@@ -44,7 +47,7 @@ impl[K : Clone + Eq + Hash, V : Clone] Clone for Map[K, V]
 impl[A : Clone] Clone for @deque.T[A]
 impl[K : Clone + Eq + Hash, V : Clone] Clone for @hashmap.T[K, V]
 impl[V : Clone + Eq + Hash] Clone for @hashset.T[V]
-impl[A : Clone] Clone for @list.T[A]
+impl[A : Clone] Clone for @list.List[A]
 impl[A : Clone + Compare] Clone for @priority_queue.T[A]
 impl[V : Clone + Eq + Hash] Clone for @set.Set[V]
 impl[K : Clone + Eq + Compare, V : Clone] Clone for @sorted_map.T[K, V]
