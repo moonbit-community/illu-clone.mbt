@@ -135,9 +135,10 @@ pub impl[V : Clone + Eq + Hash] Clone for @hashset.HashSet[V] with clone(self) {
 }
 
 ///|
-pub impl[K : Clone + Eq + Compare, V : Clone] Clone for @sorted_map.SortedMap[K, V] with clone(
-  self,
-) {
+pub impl[K : Clone + Eq + Compare, V : Clone] Clone for @sorted_map.SortedMap[
+  K,
+  V,
+] with clone(self) {
   let res = @sorted_map.new()
   for k, v in self {
     res[k.clone()] = v.clone()
@@ -146,7 +147,9 @@ pub impl[K : Clone + Eq + Compare, V : Clone] Clone for @sorted_map.SortedMap[K,
 }
 
 ///|
-pub impl[V : Clone + Eq + Compare] Clone for @sorted_set.SortedSet[V] with clone(self) {
+pub impl[V : Clone + Eq + Compare] Clone for @sorted_set.SortedSet[V] with clone(
+  self,
+) {
   let res = @sorted_set.new()
   for v in self {
     res.add(v.clone())
@@ -155,7 +158,9 @@ pub impl[V : Clone + Eq + Compare] Clone for @sorted_set.SortedSet[V] with clone
 }
 
 ///|
-pub impl[A : Clone + Compare] Clone for @priority_queue.PriorityQueue[A] with clone(self) {
+pub impl[A : Clone + Compare] Clone for @priority_queue.PriorityQueue[A] with clone(
+  self,
+) {
   let res = @priority_queue.new()
   for x in self {
     res.push(x.clone())
