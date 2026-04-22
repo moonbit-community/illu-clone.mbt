@@ -1,0 +1,15 @@
+import {
+  "moonbitlang/core/list",
+  "moonbitlang/core/deque",
+  "moonbitlang/core/hashmap",
+  "moonbitlang/core/hashset",
+  "moonbitlang/core/sorted_map",
+  "moonbitlang/core/sorted_set",
+  "moonbitlang/core/priority_queue",
+}
+
+warnings = "-1-2-3-5-6-7-8-10-29"
+
+options(
+  targets: { "top_wtest.mbt": [ "native" ] },
+)
