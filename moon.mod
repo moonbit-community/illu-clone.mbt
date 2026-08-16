@@ -1,0 +1,15 @@
+name = "illusory0x0/clone"
+
+version = "0.1.0"
+
+readme = "README.md"
+
+repository = "https://github.com/illusory0x0/clone.mbt"
+
+license = "Apache-2.0"
+
+keywords = [ "clone", "multithreading" ]
+
+description = "Clone trait for multi-threaded programming."
+
+source = "src"
